@@ -11,7 +11,7 @@ import UIKit
 class SettingsViewController: UIViewController, UIAdaptivePresentationControllerDelegate {
     
     @IBOutlet weak var deviceNameField: UITextField!
-    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var modeButton: UIButton!
     
     
@@ -19,7 +19,7 @@ class SettingsViewController: UIViewController, UIAdaptivePresentationController
         didSet {
             DispatchQueue.main.async {
                 self.deviceNameField.text = self.settings?.device_name
-                self.emailField.text = self.settings?.email
+                self.emailLabel.text = self.settings?.email
                 self.modeButton.setTitle(self.settings?.mode, for: .normal)
             }
         }
@@ -29,7 +29,6 @@ class SettingsViewController: UIViewController, UIAdaptivePresentationController
         super.viewDidLoad()
         
         deviceNameField.delegate = self
-        emailField.delegate = self
         
         getSettings()
         
@@ -58,20 +57,19 @@ class SettingsViewController: UIViewController, UIAdaptivePresentationController
         view.endEditing(true)
     }
     
-    func updateSetting(name: String, email: String) -> Void {
+    func updateName(name: String) -> Void {
         let url_end = "settings/"
         let conn = APIConnection()
         let url = conn.baseURL.appendingPathComponent(url_end)
         
         struct DataDict: Codable {
             let newName: String
-            let newEmail: String
         }
 
         struct UploadData: Codable {
             let data: DataDict
         }
-        let uploadDict = DataDict(newName: name, newEmail: email)
+        let uploadDict = DataDict(newName: name)
         let uploadDataModel = UploadData(data: uploadDict)
         
         guard let jsonData = try? JSONEncoder().encode(uploadDataModel) else {
@@ -140,7 +138,7 @@ class SettingsViewController: UIViewController, UIAdaptivePresentationController
 extension SettingsViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        updateSetting(name: deviceNameField.text!, email: emailField.text!)
+        updateName(name: deviceNameField.text!)
         return false
     }
 }
