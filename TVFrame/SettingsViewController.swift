@@ -19,8 +19,15 @@ class SettingsViewController: UIViewController, UIAdaptivePresentationController
         didSet {
             DispatchQueue.main.async {
                 self.deviceNameField.text = self.settings?.device_name
-                self.emailLabel.text = self.settings?.email
                 self.modeButton.setTitle(self.settings?.mode, for: .normal)
+            }
+        }
+    }
+    
+    var email: String? {
+        didSet {
+            DispatchQueue.main.async {
+                self.emailLabel.text = self.email
             }
         }
     }
@@ -31,6 +38,7 @@ class SettingsViewController: UIViewController, UIAdaptivePresentationController
         deviceNameField.delegate = self
         
         getSettings()
+        getEmail()
         
         initializeHideKeyboard()
         
@@ -44,6 +52,18 @@ class SettingsViewController: UIViewController, UIAdaptivePresentationController
                 print(error)
             case .success(let piSettings):
                 self?.settings = piSettings
+            }
+        }
+    }
+    
+    func getEmail() {
+        let emailRequest = EmailRequest()
+        emailRequest.getEmail { [weak self] result in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let email):
+                self?.email = email
             }
         }
     }
@@ -132,6 +152,7 @@ class SettingsViewController: UIViewController, UIAdaptivePresentationController
     
     func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
         getSettings()
+        getEmail()
     }
 }
 

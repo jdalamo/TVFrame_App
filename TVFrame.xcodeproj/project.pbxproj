@@ -17,7 +17,8 @@
 		694F90B124C555540036ED1A /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F90B024C555540036ED1A /* LogViewController.swift */; };
 		694F90B324C556140036ED1A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F90B224C556140036ED1A /* Log.swift */; };
 		694F90B524C556410036ED1A /* LogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F90B424C556410036ED1A /* LogRequest.swift */; };
-		694F90B724C77E520036ED1A /* PhotosDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F90B624C77E520036ED1A /* PhotosDownload.swift */; };
+		69AFADFF24CF696000C3ADAD /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFADFE24CF696000C3ADAD /* Email.swift */; };
+		69AFAE0124CF696C00C3ADAD /* EmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFAE0024CF696C00C3ADAD /* EmailRequest.swift */; };
 		69B5CC4D24C2264200019967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B5CC4C24C2264200019967 /* AppDelegate.swift */; };
 		69B5CC4F24C2264200019967 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B5CC4E24C2264200019967 /* SceneDelegate.swift */; };
 		69B5CC5124C2264200019967 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B5CC5024C2264200019967 /* ViewController.swift */; };
@@ -59,7 +60,8 @@
 		694F90B024C555540036ED1A /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		694F90B224C556140036ED1A /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		694F90B424C556410036ED1A /* LogRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRequest.swift; sourceTree = "<group>"; };
-		694F90B624C77E520036ED1A /* PhotosDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDownload.swift; sourceTree = "<group>"; };
+		69AFADFE24CF696000C3ADAD /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		69AFAE0024CF696C00C3ADAD /* EmailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRequest.swift; sourceTree = "<group>"; };
 		69B5CC4924C2264200019967 /* TVFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B5CC4C24C2264200019967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69B5CC4E24C2264200019967 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,8 @@
 				69B5CC6E24C2267300019967 /* SettingsViewController.swift */,
 				69B5CC7224C22C4B00019967 /* SettingsRequest.swift */,
 				69B5CC7024C22BEE00019967 /* Settings.swift */,
+				69AFAE0024CF696C00C3ADAD /* EmailRequest.swift */,
+				69AFADFE24CF696000C3ADAD /* Email.swift */,
 				69BE2BCE24C290210095418C /* ModesViewController.swift */,
 				69BE2BCC24C28E6C0095418C /* ModesRequest.swift */,
 				69BE2BCA24C28DB50095418C /* Modes.swift */,
@@ -157,7 +161,6 @@
 				694F90B024C555540036ED1A /* LogViewController.swift */,
 				694F90B424C556410036ED1A /* LogRequest.swift */,
 				694F90B224C556140036ED1A /* Log.swift */,
-				694F90B624C77E520036ED1A /* PhotosDownload.swift */,
 			);
 			path = TVFrame;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				694F909D24C4CB540036ED1A /* PhotosViewController.swift in Sources */,
 				694F90B124C555540036ED1A /* LogViewController.swift in Sources */,
 				69B5CC5124C2264200019967 /* ViewController.swift in Sources */,
+				69AFADFF24CF696000C3ADAD /* Email.swift in Sources */,
 				69B5CC4D24C2264200019967 /* AppDelegate.swift in Sources */,
 				694F90A624C4F82F0036ED1A /* PhotosTableViewCell.swift in Sources */,
 				69BE2BCF24C290210095418C /* ModesViewController.swift in Sources */,
@@ -341,9 +345,9 @@
 				694F909F24C4D5260036ED1A /* Photos.swift in Sources */,
 				69B5CC4F24C2264200019967 /* SceneDelegate.swift in Sources */,
 				694F90A124C4D5900036ED1A /* PhotosRequest.swift in Sources */,
+				69AFAE0124CF696C00C3ADAD /* EmailRequest.swift in Sources */,
 				69BE2BD624C2C5C80095418C /* ModeTableViewCell.swift in Sources */,
 				694F90B324C556140036ED1A /* Log.swift in Sources */,
-				694F90B724C77E520036ED1A /* PhotosDownload.swift in Sources */,
 				69B5CC6F24C2267300019967 /* SettingsViewController.swift in Sources */,
 				69BE2BCD24C28E6C0095418C /* ModesRequest.swift in Sources */,
 				69B5CC7124C22BEE00019967 /* Settings.swift in Sources */,

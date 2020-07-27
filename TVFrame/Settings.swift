@@ -15,5 +15,4 @@ struct SettingsResponse: Decodable {
 struct PiSettings: Decodable {
     var device_name: String
     var mode: String
-    var email: String
 }

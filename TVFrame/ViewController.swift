@@ -54,14 +54,6 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
         present(vc, animated: true)
     }
     
-    @IBAction func didTapDownloadButton() {
-        let url_end = "download_photos/"
-        let conn = APIConnection()
-        let url = conn.baseURL.appendingPathComponent(url_end)
-        let dataTask = URLSession.shared.dataTask(with: url) {data, _, _ in}
-        dataTask.resume()
-    }
-    
     func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
         getName()
     }
