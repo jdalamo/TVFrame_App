@@ -92,7 +92,7 @@ class ModesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func changeMode(newMode: String) -> Void {
-        let url_end = "changemode/"
+        let url_end = "modes/"
         let conn = APIConnection()
         let url = conn.baseURL.appendingPathComponent(url_end)
         

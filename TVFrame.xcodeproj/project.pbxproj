@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		694F909924C367020036ED1A /* DeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F909824C367020036ED1A /* DeviceName.swift */; };
-		694F909B24C367550036ED1A /* NameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F909A24C367550036ED1A /* NameRequest.swift */; };
 		694F909D24C4CB540036ED1A /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F909C24C4CB540036ED1A /* PhotosViewController.swift */; };
 		694F909F24C4D5260036ED1A /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F909E24C4D5260036ED1A /* Photos.swift */; };
 		694F90A124C4D5900036ED1A /* PhotosRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F90A024C4D5900036ED1A /* PhotosRequest.swift */; };
@@ -51,8 +49,6 @@
 /* Begin PBXFileReference section */
 		0808F513EFEBDBC9A62B5AAA /* Pods-TVFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVFrame.release.xcconfig"; path = "Target Support Files/Pods-TVFrame/Pods-TVFrame.release.xcconfig"; sourceTree = "<group>"; };
 		2778B95F5483E7A278F1EB0D /* Pods-TVFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVFrame.debug.xcconfig"; path = "Target Support Files/Pods-TVFrame/Pods-TVFrame.debug.xcconfig"; sourceTree = "<group>"; };
-		694F909824C367020036ED1A /* DeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceName.swift; sourceTree = "<group>"; };
-		694F909A24C367550036ED1A /* NameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRequest.swift; sourceTree = "<group>"; };
 		694F909C24C4CB540036ED1A /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		694F909E24C4D5260036ED1A /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		694F90A024C4D5900036ED1A /* PhotosRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosRequest.swift; sourceTree = "<group>"; };
@@ -145,8 +141,6 @@
 				69B5CC5224C2264200019967 /* Main.storyboard */,
 				694F90AC24C52D7B0036ED1A /* APIConnection.swift */,
 				69B5CC5024C2264200019967 /* ViewController.swift */,
-				694F909A24C367550036ED1A /* NameRequest.swift */,
-				694F909824C367020036ED1A /* DeviceName.swift */,
 				69B5CC6E24C2267300019967 /* SettingsViewController.swift */,
 				69B5CC7224C22C4B00019967 /* SettingsRequest.swift */,
 				69B5CC7024C22BEE00019967 /* Settings.swift */,
@@ -347,12 +341,10 @@
 				694F909F24C4D5260036ED1A /* Photos.swift in Sources */,
 				69B5CC4F24C2264200019967 /* SceneDelegate.swift in Sources */,
 				694F90A124C4D5900036ED1A /* PhotosRequest.swift in Sources */,
-				694F909B24C367550036ED1A /* NameRequest.swift in Sources */,
 				69BE2BD624C2C5C80095418C /* ModeTableViewCell.swift in Sources */,
 				694F90B324C556140036ED1A /* Log.swift in Sources */,
 				694F90B724C77E520036ED1A /* PhotosDownload.swift in Sources */,
 				69B5CC6F24C2267300019967 /* SettingsViewController.swift in Sources */,
-				694F909924C367020036ED1A /* DeviceName.swift in Sources */,
 				69BE2BCD24C28E6C0095418C /* ModesRequest.swift in Sources */,
 				69B5CC7124C22BEE00019967 /* Settings.swift in Sources */,
 			);

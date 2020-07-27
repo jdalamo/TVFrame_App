@@ -9,7 +9,8 @@
 import Foundation
 
 struct APIConnection {
-    var IPAddress: String = "172.20.10.4"
+//    var IPAddress: String = "172.20.10.4"
+    var IPAddress: String = "127.0.0.1"
     var baseURLString: String
     var baseURL: URL
     

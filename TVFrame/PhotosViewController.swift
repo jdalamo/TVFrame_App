@@ -67,7 +67,7 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
         } else {
             let filename = photos[indexPath.row]
             let conn = APIConnection()
-            let baseURL = conn.baseURL.appendingPathComponent("pic/")
+            let baseURL = conn.baseURL.appendingPathComponent("photos/")
             let imageUrl = baseURL.appendingPathComponent(filename)
             cell.configure(with: filename, imageUrl: imageUrl)
         }

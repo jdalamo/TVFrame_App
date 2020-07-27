@@ -13,10 +13,10 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
     @IBOutlet weak var navItem: UINavigationItem!
     @IBOutlet weak var picsButton: UIButton!
     
-    var name: DeviceName? {
+    var name: String? {
         didSet {
             DispatchQueue.main.async {
-                self.navItem.title = self.name?.device_name
+                self.navItem.title = self.name
             }
         }
     }
@@ -32,13 +32,13 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
     }
     
     func getName() {
-        let nameRequest = NameRequest()
-        nameRequest.getName { [weak self] result in
+        let settingsRequest = SettingsRequest()
+        settingsRequest.getSettings { [weak self] result in
             switch result {
             case .failure(let error):
                 print(error)
-            case .success(let name):
-                self?.name = name
+            case .success(let settings):
+                self?.name = settings.device_name
             }
         }
     }
