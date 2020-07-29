@@ -54,6 +54,11 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
         present(vc, animated: true)
     }
     
+    @IBAction func didTapScannerButton() {
+        let vc = ScannerViewController()
+        present(vc, animated: true)
+    }
+    
     func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
         getName()
     }

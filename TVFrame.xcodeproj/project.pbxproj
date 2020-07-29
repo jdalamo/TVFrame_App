@@ -19,6 +19,7 @@
 		694F90B524C556410036ED1A /* LogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F90B424C556410036ED1A /* LogRequest.swift */; };
 		69AFADFF24CF696000C3ADAD /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFADFE24CF696000C3ADAD /* Email.swift */; };
 		69AFAE0124CF696C00C3ADAD /* EmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFAE0024CF696C00C3ADAD /* EmailRequest.swift */; };
+		69AFAE0324CF8B8300C3ADAD /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AFAE0224CF8B8300C3ADAD /* ScannerViewController.swift */; };
 		69B5CC4D24C2264200019967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B5CC4C24C2264200019967 /* AppDelegate.swift */; };
 		69B5CC4F24C2264200019967 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B5CC4E24C2264200019967 /* SceneDelegate.swift */; };
 		69B5CC5124C2264200019967 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B5CC5024C2264200019967 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		694F90B424C556410036ED1A /* LogRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRequest.swift; sourceTree = "<group>"; };
 		69AFADFE24CF696000C3ADAD /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
 		69AFAE0024CF696C00C3ADAD /* EmailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRequest.swift; sourceTree = "<group>"; };
+		69AFAE0224CF8B8300C3ADAD /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		69B5CC4924C2264200019967 /* TVFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B5CC4C24C2264200019967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69B5CC4E24C2264200019967 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				694F90B024C555540036ED1A /* LogViewController.swift */,
 				694F90B424C556410036ED1A /* LogRequest.swift */,
 				694F90B224C556140036ED1A /* Log.swift */,
+				69AFAE0224CF8B8300C3ADAD /* ScannerViewController.swift */,
 			);
 			path = TVFrame;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				694F90B124C555540036ED1A /* LogViewController.swift in Sources */,
 				69B5CC5124C2264200019967 /* ViewController.swift in Sources */,
 				69AFADFF24CF696000C3ADAD /* Email.swift in Sources */,
+				69AFAE0324CF8B8300C3ADAD /* ScannerViewController.swift in Sources */,
 				69B5CC4D24C2264200019967 /* AppDelegate.swift in Sources */,
 				694F90A624C4F82F0036ED1A /* PhotosTableViewCell.swift in Sources */,
 				69BE2BCF24C290210095418C /* ModesViewController.swift in Sources */,
