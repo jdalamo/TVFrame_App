@@ -108,6 +108,6 @@ extension ScannerViewController : AVCaptureMetadataOutputObjectsDelegate {
     }
     
     func found(ip: String) {
-        print(ip)
+        UserDefaults.standard.set(ip, forKey: "ServerIpAddress")
     }
 }

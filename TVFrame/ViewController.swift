@@ -31,6 +31,16 @@ class ViewController: UIViewController, UIAdaptivePresentationControllerDelegate
         self.picsButton.setImage(largeImage, for: .normal)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let testConnection = APIConnection()
+        if testConnection.IPAddress == "None" {
+            let vc = ScannerViewController()
+            present(vc, animated: true)
+        }
+    }
+    
     func getName() {
         let settingsRequest = SettingsRequest()
         settingsRequest.getSettings { [weak self] result in
