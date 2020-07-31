@@ -154,6 +154,14 @@ class SettingsViewController: UIViewController, UIAdaptivePresentationController
         getSettings()
         getEmail()
     }
+    
+    @IBAction func didTapConnButton() {
+        let url_end = "check_connection/"
+        let conn = APIConnection()
+        let url = conn.baseURL.appendingPathComponent(url_end)
+        let dataTask = URLSession.shared.dataTask(with: url) {data, _, _ in}
+        dataTask.resume()
+    }
 }
 
 extension SettingsViewController: UITextFieldDelegate {
